@@ -24,8 +24,9 @@ jobs:
       run: mvn clean verify
 
     - name: Upload rapport de couverture (JaCoCo)
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v1
       with:
         name: jacoco-report
         path: target/site/jacoco
+
 
